@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(250, 235, 215, 0.904);
+    cursor: default;
+}
+
+.heads {
+    font-size: 3rem !important;
+}
+
+.back {
+    background-color: #75BF7A;
+}
+
+.one {
+    font-size: 2rem !important;
+    font-weight: bolder;
+}
+
+
+
+
+/* For Small Screen  */
+
+
+@media (max-width: 767px) {
+    .row.mx-auto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-lg-3 {
+        order: -1; /* Move the image column to the top */
+        text-align: center; /* Center-align text for all columns */
+    }
+    .col-lg-3:nth-child(n+2) {
+        margin-top: 20px; /* Add margin to separate remaining content */
+    }
+}
